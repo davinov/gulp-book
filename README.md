@@ -9,7 +9,8 @@ All these languages (and others like LiveScript, SCSS, etc.) are (unfortunatly?)
 It's here where tools like [Grunt](http://gruntjs.com) or [Brunch](brunch.io) were needed, automating this "compilation".
 
 I personnally used a lot Brunch as I considered it easier for common tasks in the stack I use, and I really appreciate his usability, and his *out of the box* behaviour.
-However, when I tried to use alays more plugins to achieve more complex tasks, such as marking assets with a chekcsum, then adding them in a cache manisfest file, I realized the limits of thess tools, essentially because they're based on configuration, instead of code.
+I loved it so much I wrote a [kewl](http://david.nowinsky.net/kewl) skeleton to start prototyping quickly with it.
+However, when I tried to use always more plugins to achieve more complex tasks, such as marking assets with a chekcsum, then adding them in a cache manisfest file, I realized the limits of thess tools, essentially because they're based on configuration, instead of code.
 
 And then, I discover [Gulp](http://gulpjs.com).
 
