@@ -1,0 +1,17 @@
+# Gulp: the modern frontend factory
+
+I'm excited everyday I write front-end code with these amazing tools we now have to build client-side apps with pleasure. 
+I liked JavaScript but typing so many brackets was killing my keyboard, then I discovered [CoffeeScript](http://coffeescript.org). 
+I was desperatly trying to rationalize my copy and paste activity for selectors in CSS, but that before [LESS](http://lesscss.org) saved my life. 
+I got lost everytime in the verbose HTML markup of long webpages, and couldn't stand losing time forgetting closing tags, so [Jade](http://jade-lang.com) felt like a spring cleaning to me. 
+
+All these languages (and others like LiveScript, SCSS, etc.) are (unfortunatly?) not natively read by browsers we develop for, adding to our test and release process an extra building step.
+It's here where tools like [Grunt](http://gruntjs.com) or [Brunch](brunch.io) were needed, automating this "compilation".
+
+I personnally used a lot Brunch as I considered it easier for common tasks in the stack I use, and I really appreciate his usability, and his *out of the box* behaviour.
+However, when I tried to use alays more plugins to achieve more complex tasks, such as marking assets with a chekcsum, then adding them in a cache manisfest file, I realized the limits of thess tools, essentially because they're based on configuration, instead of code.
+
+And then, I discover [Gulp](http://gulpjs.com).
+
+As developers, we love code. We'd like to know what's happening deep down when we call some obscure function.
+Gulp get rid of this "black box" approach and proposes a radically different philosophy.
