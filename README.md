@@ -12,7 +12,7 @@ I personnally used a lot Brunch as I considered it easier for common tasks in th
 I loved it so much I wrote a [kewl](http://david.nowinsky.net/kewl) skeleton to start prototyping quickly with it.
 However, when I tried to use always more plugins to achieve more complex tasks, such as marking assets with a chekcsum, then adding them in a cache manisfest file, I realized the limits of thess tools, essentially because they're based on configuration, instead of code.
 
-And then, I discover [Gulp](http://gulpjs.com).
+And then, I discovered [Gulp](http://gulpjs.com).
 
 As developers, we love code. We'd like to know what's happening deep down when we call some obscure function.
-Gulp get rid of this "black box" approach and proposes a radically different philosophy.
+Gulp get rid of this "black box" approach and proposes a radically different philosophy to create your perfect front-end factory.

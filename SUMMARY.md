@@ -2,8 +2,9 @@
 
 - [Gulp basics](concepts/README.md)
   - [Gulpfile](concepts/gulpfile.md)
-  - [Streams](concepts/streams.md)
   - [Tasks](concepts/tasks.md)
+  - [Streams](concepts/streams.md)
+  - [Plugins](concepts/plugins.md)
 - [Rewrite Brunch in Gulp tasks](example/README.md)
   - [Compiling coffee files](example/coffee.md)
   - [Compiling jade files](example/jade.md)
