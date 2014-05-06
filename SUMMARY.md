@@ -6,6 +6,7 @@
   - [Streams](concepts/streams.md)
   - [Plugins](concepts/plugins.md)
 - [Rewrite Brunch in Gulp tasks](example/README.md)
+  - [Project organization](example/organization.md)
   - [Compiling coffee files](example/coffee.md)
   - [Compiling jade files](example/jade.md)
   - [Compiling less files](example/less.md)
