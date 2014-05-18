@@ -89,6 +89,7 @@ config =
   templates_module: 'myapp'
   vendor_main_file: 'vendor.js'
   bower_main_file: 'bower-vendor.js'
+  manifest_file: 'myapp.appcache'
 
 module.exports = config
 ```
