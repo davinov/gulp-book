@@ -5,10 +5,10 @@ To include external libs placed in `vendor/` in a `vendor.js` file:
 
 ```coffee
 gulp.task 'vendor', ->
-  gulp.src parameters.vendor_path + '/**/*.js'
-  .pipe concat parameters.vendor_main_file
-  .pipe gulp.dest parameters.web_path + '/js'
-  .on 'error', gutil.log
+    gulp.src parameters.vendor_path+'/**/*.js'
+    .pipe concat parameters.vendor_main_file
+    .pipe gulp.dest parameters.web_path+'/js'
+    .on 'error', gutil.log
 ```
 
 ## Using Bower
@@ -21,8 +21,7 @@ gulp.task 'bower', ->
     bowerFiles()
       .pipe filter '**/*.js'
       .pipe concat parameters.bower_main_file
-      .pipe gulp.dest parameters.web_path + '/js'
-      .pipe filesize()
+      .pipe gulp.dest parameters.web_path+'/js'
       .on 'error', gutil.log
 ```
 

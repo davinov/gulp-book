@@ -49,7 +49,7 @@ Let's start writing the `Gulpfile`!
 
 ## Using CoffeeScript for the Gulpfile
 
-Following (this Gulp recipe](https://github.com/gulpjs/gulp/blob/master/docs/recipes/using-coffee-script-for-gulpfile.md):
+Following [this Gulp recipe](https://github.com/gulpjs/gulp/blob/master/docs/recipes/using-coffee-script-for-gulpfile.md):
 
 `gulpfile.js`:
 ```js

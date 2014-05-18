@@ -2,7 +2,7 @@
 
 To demonstrate the power of Gulp, I suggest to show you how to rewrite the build process I used with [Brunch](http://brunch.io) in a Gulpfile.
 
-In 10 minutes.
+In 20 minutes.
 
 Go.
 
