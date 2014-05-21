@@ -6,7 +6,7 @@ I was desperately trying to rationalize my copy and paste activity for selectors
 I got lost every time in the verbose HTML markup of long web pages, and couldn't stand losing time forgetting closing tags, so [Jade](http://jade-lang.com) felt like a spring cleaning to me.
 
 All these languages (and others like LiveScript, SCSS, etc.) are (unfortunately?) not natively read by browsers we develop for, adding to our test and release process an extra building step.
-It's here where tools like [Grunt](http://gruntjs.com) or [Brunch](brunch.io) were needed, automating this "compilation".
+It's here where tools like [Grunt](http://gruntjs.com) or [Brunch](http://brunch.io) were needed, automating this "compilation".
 
 I personally used a lot Brunch as I considered it easier for common tasks in the stack I use, and I really appreciate his usability, and his *out of the box* behaviour.
 I loved it so much I wrote a [kewl](http://david.nowinsky.net/kewl) skeleton to start prototyping quickly with it.
