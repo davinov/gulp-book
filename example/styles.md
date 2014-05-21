@@ -13,8 +13,8 @@ gulp.task 'less', ->
   .on 'error', gutil.log
 ```
 
-## Using SASS
-If you feel more like using [SASS](http://sass-lang.com/), it's basically the same, except for the plugin used:
+## Using Sass
+If you feel more like using [Sass](http://sass-lang.com/), it's basically the same, except for the plugin used:
 `npm install --save gulp-sass`
 ```coffee
 sass    = require 'gulp-sass'
