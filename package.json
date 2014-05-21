@@ -1,0 +1,24 @@
+{
+  "name": "gulp-frontend-factory",
+  "version": "0.0.0",
+  "description": "I'm excited everyday I write front-end code with these amazing tools we now have to build client-side apps with pleasure.  I liked JavaScript but typing so many brackets was killing my keyboard, then I discovered [CoffeeScript](http://coffeescript.org).  I was desperately trying to rationalize my copy and paste activity for selectors in CSS, but that before [LESS](http://lesscss.org) saved my life. I got lost every time in the verbose HTML markup of long web pages, and couldn't stand losing time forgetting closing tags, so [Jade](http://jade-lang.com) felt like a spring cleaning to me.",
+  "main": "README.md",
+  "dependencies": {
+    "gitbook": "~0.4.3",
+    "gitbook-plugin-ga": "~0.0.1",
+    "gitbook-plugin-disqus": "0.0.1"
+  },
+  "scripts": {
+    "start": "gitbook serve"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davinov/gulp-book.git"
+  },
+  "author": "David Nowinsky <david@nowinsky.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davinov/gulp-book/issues"
+  }
+}

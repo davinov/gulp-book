@@ -1,0 +1,490 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Project organization | Gulp: the modern frontend factory</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="davinov">
+        <meta name="description" content="I&#39;m excited everyday I write front-end code with these amazing tools we now have to build client-side apps with pleasure. 
+I liked JavaScript but typing so many brackets was killing my keyboard, then I discovered [CoffeeScript](http://coffeescript.org). 
+I was desperately trying to rationalize my copy and paste activity for selectors in CSS, but that was before [LESS](http://lesscss.org) saved my life.
+I got lost every time in the verbose HTML markup of long web pages, and couldn&#39;t stand losing time forgetting closing tags, so [Jade](http://jade-lang.com) felt like a spring cleaning to me.">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../example/coffee.html" />
+        
+        
+        <link rel="prev" href="../example/README.html" />
+        
+
+        <meta property="og:title" content="Project organization | Gulp: the modern frontend factory">
+        <meta property="og:site_name" content="Gulp: the modern frontend factory">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/davinov">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
+
+
+        
+    <div class="book" data-github="davinov/gulp-book" data-level="2.1" data-basepath=".." data-revision="1400681697074">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="https://github.com/davinov/gulp-book" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/davinov/gulp-book/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/davinov/gulp-book/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >Gulp: the modern frontend factory</a>
+    </h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        <li>
+            <a href="http://david.nowinsky.net" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/davinov/gulp-book/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://github.com/davinov/gulp-book/edit/master/example/organization.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li class="chapter " data-level="1" data-path="concepts/README.html">
+                
+                <a href="../concepts/README.html">
+                    <i class="fa fa-check"></i> <b>1.</b> Gulp basics
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="1.1" data-path="concepts/gulpfile.html">
+                            
+                            <a href="../concepts/gulpfile.html">
+                                <i class="fa fa-check"></i> <b>1.1.</b> Gulpfile
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.2" data-path="concepts/tasks.html">
+                            
+                            <a href="../concepts/tasks.html">
+                                <i class="fa fa-check"></i> <b>1.2.</b> Tasks
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.3" data-path="concepts/streams.html">
+                            
+                            <a href="../concepts/streams.html">
+                                <i class="fa fa-check"></i> <b>1.3.</b> Streams
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.4" data-path="concepts/plugins.html">
+                            
+                            <a href="../concepts/plugins.html">
+                                <i class="fa fa-check"></i> <b>1.4.</b> Plugins
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li class="chapter " data-level="2" data-path="example/README.html">
+                
+                <a href="../example/README.html">
+                    <i class="fa fa-check"></i> <b>2.</b> Rewrite Brunch in Gulp tasks
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="2.1" data-path="example/organization.html">
+                            
+                            <a href="../example/organization.html">
+                                <i class="fa fa-check"></i> <b>2.1.</b> Project organization
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.2" data-path="example/coffee.html">
+                            
+                            <a href="../example/coffee.html">
+                                <i class="fa fa-check"></i> <b>2.2.</b> Compiling Coffee files
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.3" data-path="example/jade.html">
+                            
+                            <a href="../example/jade.html">
+                                <i class="fa fa-check"></i> <b>2.3.</b> Compiling Jade files
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.4" data-path="example/styles.html">
+                            
+                            <a href="../example/styles.html">
+                                <i class="fa fa-check"></i> <b>2.4.</b> Compiling stylesheets
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.5" data-path="example/vendors.html">
+                            
+                            <a href="../example/vendors.html">
+                                <i class="fa fa-check"></i> <b>2.5.</b> Handling dependencies
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.6" data-path="example/minify.html">
+                            
+                            <a href="../example/minify.html">
+                                <i class="fa fa-check"></i> <b>2.6.</b> Concataning and minifying files
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.7" data-path="example/assets.html">
+                            
+                            <a href="../example/assets.html">
+                                <i class="fa fa-check"></i> <b>2.7.</b> Other assets
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.8" data-path="example/angular-templates.html">
+                            
+                            <a href="../example/angular-templates.html">
+                                <i class="fa fa-check"></i> <b>2.8.</b> Angular apps
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.9" data-path="example/offline.html">
+                            
+                            <a href="../example/offline.html">
+                                <i class="fa fa-check"></i> <b>2.9.</b> Create an offline mode
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.10" data-path="example/versioning.html">
+                            
+                            <a href="../example/versioning.html">
+                                <i class="fa fa-check"></i> <b>2.10.</b> Versioning your files
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.11" data-path="example/watch-serve.html">
+                            
+                            <a href="../example/watch-serve.html">
+                                <i class="fa fa-check"></i> <b>2.11.</b> Development watcher and server
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li class="chapter " data-level="3" data-path="conclusion.html">
+                
+                <a href="../conclusion.html">
+                    <i class="fa fa-check"></i> <b>3.</b> Happy Gulpy life!
+                </a>
+                
+                
+            </li>
+        
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 38.888888888888886%;min-width: 33.333333333333336%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../concepts/README.html" title="Gulp basics" class="chapter done new-chapter" data-progress="1" style="left: 5.555555555555555%;"></a>
+    
+        <a href="../concepts/gulpfile.html" title="Gulpfile" class="chapter done " data-progress="1.1" style="left: 11.11111111111111%;"></a>
+    
+        <a href="../concepts/tasks.html" title="Tasks" class="chapter done " data-progress="1.2" style="left: 16.666666666666668%;"></a>
+    
+        <a href="../concepts/streams.html" title="Streams" class="chapter done " data-progress="1.3" style="left: 22.22222222222222%;"></a>
+    
+        <a href="../concepts/plugins.html" title="Plugins" class="chapter done " data-progress="1.4" style="left: 27.77777777777778%;"></a>
+    
+        <a href="../example/README.html" title="Rewrite Brunch in Gulp tasks" class="chapter done new-chapter" data-progress="2" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../example/organization.html" title="Project organization" class="chapter done " data-progress="2.1" style="left: 38.888888888888886%;"></a>
+    
+        <a href="../example/versioning.html" title="Versioning your files" class="chapter  " data-progress="2.10" style="left: 44.44444444444444%;"></a>
+    
+        <a href="../example/watch-serve.html" title="Development watcher and server" class="chapter  " data-progress="2.11" style="left: 50%;"></a>
+    
+        <a href="../example/coffee.html" title="Compiling Coffee files" class="chapter  " data-progress="2.2" style="left: 55.55555555555556%;"></a>
+    
+        <a href="../example/jade.html" title="Compiling Jade files" class="chapter  " data-progress="2.3" style="left: 61.111111111111114%;"></a>
+    
+        <a href="../example/styles.html" title="Compiling stylesheets" class="chapter  " data-progress="2.4" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../example/vendors.html" title="Handling dependencies" class="chapter  " data-progress="2.5" style="left: 72.22222222222223%;"></a>
+    
+        <a href="../example/minify.html" title="Concataning and minifying files" class="chapter  " data-progress="2.6" style="left: 77.77777777777777%;"></a>
+    
+        <a href="../example/assets.html" title="Other assets" class="chapter  " data-progress="2.7" style="left: 83.33333333333333%;"></a>
+    
+        <a href="../example/angular-templates.html" title="Angular apps" class="chapter  " data-progress="2.8" style="left: 88.88888888888889%;"></a>
+    
+        <a href="../example/offline.html" title="Create an offline mode" class="chapter  " data-progress="2.9" style="left: 94.44444444444444%;"></a>
+    
+        <a href="../conclusion.html" title="Happy Gulpy life!" class="chapter  new-chapter" data-progress="3" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_15">
+                    
+                        <h1 id="project-organization">Project organization</h1>
+<p>Considering my target organization:</p>
+<pre><code>    app/
+        assets/
+            images/
+                ...
+            downloads/
+                ...
+        module1/
+            *.coffee
+            *.jade
+            *.less
+        module2/
+            ...
+        ...
+        app.coffee
+        app.(less|saas)
+        index.jade
+    build/
+        gulpfile.coffee
+    config/
+        parameters.coffee
+    vendor/
+        lib1.js
+        lib2.js
+        ...
+    bower.json
+    gulpfile.js
+    package.json
+    node_modules/
+        ...
+    bower_components/
+        ...
+    _public/
+        images/
+            ...
+        downloads/
+            ...
+        css/
+        js/
+            app.js
+            vendor.js
+            bower-vendor.js
+        index.html
+</code></pre><p>Let&#39;s start writing the <code>Gulpfile</code>!</p>
+<h2 id="using-coffeescript-for-the-gulpfile">Using CoffeeScript for the Gulpfile</h2>
+<p>Following <a href="https://github.com/gulpjs/gulp/blob/master/docs/recipes/using-coffee-script-for-gulpfile.md" target="_blank">this Gulp recipe</a>:</p>
+<p><code>gulpfile.js</code>:</p>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>(<span class="hljs-string">'coffee-script/register'</span>);
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'./build/gulpfile.coffee'</span>);
+</code></pre>
+<p><code>build/gulpfile.coffee</code>:</p>
+<pre><code class="lang-coffeescript">gulp = <span class="hljs-built_in">require</span> <span class="hljs-string">'gulp'</span>
+</code></pre>
+<h2 id="app-specific-variables">App specific variables</h2>
+<p>To let app&#39;s specific parameters live in a separate config file:</p>
+<p><code>build/gulpfile.coffee</code>:</p>
+<pre><code class="lang-coffeescript">parameters    = <span class="hljs-built_in">require</span> <span class="hljs-string">'../config/parameters.coffee'</span>
+</code></pre>
+<p><code>config/parameters.coffee</code>:</p>
+<pre><code class="lang-coffeescript">app_path = <span class="hljs-string">'app'</span>
+
+config =
+
+  <span class="hljs-attribute">app_path</span>: app_path
+  <span class="hljs-attribute">web_path</span>: <span class="hljs-string">'_public'</span>
+  <span class="hljs-attribute">vendor_path</span>: <span class="hljs-string">'vendor'</span>
+  <span class="hljs-attribute">assets_path</span>: app_path + <span class="hljs-string">'/assets'</span>
+
+  <span class="hljs-attribute">app_main_file</span>: <span class="hljs-string">'app.js'</span>
+  <span class="hljs-attribute">css_main_file</span>: <span class="hljs-string">'app.css'</span>
+  <span class="hljs-attribute">styles_main_file</span>: app_path + <span class="hljs-string">'/app.less'</span> <span class="hljs-comment"># or app.sass if you prefer Sass</span>
+  <span class="hljs-attribute">templates_file</span>: <span class="hljs-string">'app.templates.js'</span>
+  <span class="hljs-attribute">templates_module</span>: <span class="hljs-string">'myapp'</span>
+  <span class="hljs-attribute">vendor_main_file</span>: <span class="hljs-string">'vendor.js'</span>
+  <span class="hljs-attribute">bower_main_file</span>: <span class="hljs-string">'bower-vendor.js'</span>
+  <span class="hljs-attribute">manifest_file</span>: <span class="hljs-string">'myapp.appcache'</span>
+
+<span class="hljs-built_in">module</span>.<span class="hljs-built_in">exports</span> = config
+</code></pre>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../example/README.html" class="navigation navigation-prev " aria-label="Previous page: Rewrite Brunch in Gulp tasks"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../example/coffee.html" class="navigation navigation-next " aria-label="Next page: Compiling Coffee files"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
+    
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"ga":{"token":"UA-36812575-2"},"disqus":{"shortName":"gulp-book"}};
+    gitbook.start(config);
+});
+</script>
+
+    </body>
+</html>

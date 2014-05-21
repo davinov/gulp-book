@@ -1,0 +1,17 @@
+{
+  "engines": {
+    "gitbook": "*"
+  },
+  "links": {
+    "about": "http://david.nowinsky.net"
+  },
+  "plugins": ["ga", "disqus"],
+  "pluginsConfig": {
+    "ga": {
+      "token": "UA-36812575-2"
+    },
+    "disqus": {
+      "shortName": "gulp-book"
+    }
+  }
+}
