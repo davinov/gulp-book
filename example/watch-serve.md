@@ -11,7 +11,7 @@ gulp.task 'watch',
 ['build'], # After all build tasks are done
 ->
   gulp.watch parameters.app_path + '/**/*.coffee', ['coffee' ]
-  gulp.watch parameters.app_path + '/**/*.less', ['less', 'manifest', 'references'] # Manifest and references task is necessary if these files are versioned
+  gulp.watch parameters.app_path + '/**/*.(less|saas)', ['styles', 'manifest', 'references'] # Manifest and references task is necessary if these files are versioned
   gulp.watch parameters.app_path + '/*.jade', ['jade', 'references'] # References task only for files that contain references (but are not versioned, typically index.(jade|html))
   gulp.watch parameters.app_path + '/*/**/*.jade', ['templates']
   gulp.watch parameters.assets_path, ['assets']

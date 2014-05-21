@@ -9,9 +9,9 @@ This is an example for versioning our css:
 ```coffee
 rev = require 'gulp-rev'
 
-gulp.task 'less', ->
-  gulp.src parameters.less_main_file
-  .pipe less paths: [ path.join(__dirname) ]
+gulp.task 'styles', ->
+  gulp.src parameters.lstyles_main_file
+  .pipe less paths: [ path.join(__dirname) ] # or sass()
   .pipe rev()
   .pipe gulp.dest parameters.web_path+'/css'
   .on 'error', gutil.log
@@ -24,20 +24,20 @@ We need then to change `app.css` references in other files, like `index.html` so
 I personally just replace the references using native `replace` in JavaScript:
 
 ```coffee
-gulp.task 'less', ->
-  gulp.src parameters.less_main_file
-  .pipe less paths: [ path.join(__dirname) ]
+gulp.task 'styles', ->
+  gulp.src parameters.styles_main_file
+  .pipe less paths: [ path.join(__dirname) ] # or sass()
   .pipe rev()
   .pipe gulp.dest parameters.web_path+'/css'
   .pipe rename 'rev-manifest-css.json' # Generates a manifest to map old file names with new ones
   .pipe gulp.dest parameters.web_path
   .on 'error', gutil.log
 
-gulp.task 'references', ['less', 'jade'], ->
+gulp.task 'references', ['styles', 'jade'], ->
   revManifest = {}
   # Read file manifests
-  for fileName in fs.readdirSync WEB_PATH
-    _.extend revManifest, JSON.parse fs.readFileSync WEB_PATH+'/'+fileName, 'utf8' if /^(rev-manifest)/.test fileName
+  for fileName in fs.readdirSync parameters.web_path
+    _.extend revManifest, JSON.parse fs.readFileSync parameters.web_path+'/'+fileName, 'utf8' if /^(rev-manifest)/.test fileName
 
   # Strip absolute paths
   replacements = {}

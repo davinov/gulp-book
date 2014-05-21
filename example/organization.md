@@ -16,7 +16,7 @@ Considering my target organization:
                 ...
             ...
             app.coffee
-            app.less
+            app.(less|saas)
             index.jade
         build/
             gulpfile.coffee
@@ -84,7 +84,7 @@ config =
 
   app_main_file: 'app.js'
   css_main_file: 'app.css'
-  less_main_file: app_path + '/app.less'
+  styles_main_file: app_path + '/app.less' # or app.sass if you prefer SASS
   templates_file: 'app.templates.js'
   templates_module: 'myapp'
   vendor_main_file: 'vendor.js'

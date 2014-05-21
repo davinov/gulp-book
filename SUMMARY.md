@@ -9,7 +9,7 @@
   - [Project organization](example/organization.md)
   - [Compiling Coffee files](example/coffee.md)
   - [Compiling Jade files](example/jade.md)
-  - [Compiling Less files](example/less.md)
+  - [Compiling stylesheets](example/styles.md)
   - [Handling dependencies](example/vendors.md)
   - [Concataning and minifying files](example/minify.md)
   - [Other assets](example/assets.md)
