@@ -4,7 +4,7 @@ Like Brunch, Gulp can help you watch your file changes and serves them to some `
 
 `npm install --save gulp-watch gulp-serve'`
 
-```coffee
+```coffeescript
 serve = require 'gulp-serve'
 
 gulp.task 'watch',
@@ -18,7 +18,7 @@ gulp.task 'watch',
   gulp.watch 'bower.json', ['vendors']
 ```
 
-```coffee
+```coffeescript
 gulp.task 'serve', ['build'], serve parameters.web_path
 ```
 

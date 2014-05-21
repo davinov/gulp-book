@@ -6,7 +6,7 @@ It'll be good to automate this process.
 
 We can use the plugin `gulp-manifest` dedicated to this task:
 `npm install --save gulp-manifest'`
-```coffee
+```coffeescript
 manifest      = require 'gulp-manifest'
 
 gulp.task 'manifest',

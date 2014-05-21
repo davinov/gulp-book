@@ -58,7 +58,7 @@ require('./build/gulpfile.coffee');
 ```
 
 `build/gulpfile.coffee`:
-```coffee
+```coffeescript
 gulp = require 'gulp'
 ```
 
@@ -67,12 +67,12 @@ gulp = require 'gulp'
 To let app's specific parameters live in a separate config file:
 
 `build/gulpfile.coffee`:
-```coffee
+```coffeescript
 parameters    = require '../config/parameters.coffee'
 ```
 
 `config/parameters.coffee`:
-```coffee
+```coffeescript
 app_path = 'app'
 
 config =

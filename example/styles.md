@@ -2,7 +2,7 @@
 
 To compile LESS files to CSS in `_public/` folder:
 `npm install --save gulp-less`
-```coffee
+```coffeescript
 path    = require 'path'
 less    = require 'gulp-less'
 
@@ -16,7 +16,7 @@ gulp.task 'less', ->
 ## Using Sass
 If you feel more like using [Sass](http://sass-lang.com/), it's basically the same, except for the plugin used:
 `npm install --save gulp-sass`
-```coffee
+```coffeescript
 sass    = require 'gulp-sass'
 
 gulp.task 'sass', ->

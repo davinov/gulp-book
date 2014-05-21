@@ -3,7 +3,7 @@
 For Angular apps, you may want all your `.jade` files inside modules to be incorporated in your javascripts, avoiding a request each time a template should be loaded.
 `gulp-angular-templatecache` takes care fo that:
 `npm install --save gulp-angular-templatecache'`
-```coffee
+```coffeescript
 templateCache      = require 'gulp-angular-templatecache'
 
  gulp.src parameters.app_path + '/*/**/*.jade' # All jades inside modules (not the main index.jade file!)

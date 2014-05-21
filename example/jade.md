@@ -2,7 +2,7 @@
 
 To compile the jade files in `app/` to the `_public/` folder:
 `npm install --save gulp-jade`
-```coffee
+```coffeescript
 jade    = require 'gulp-jade'
 
 gulp.task 'jade', ->

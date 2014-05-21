@@ -2,7 +2,7 @@
 
 To compile my files from `app/` to a single file in `_public/` folder:
 `npm install --save gulp-coffee gulp-concat gulp-util`
-```coffee
+```coffeescript
 coffee  = require 'gulp-coffee'
 concat  = require 'gulp-concat'
 gutil   = require 'gulp-util'

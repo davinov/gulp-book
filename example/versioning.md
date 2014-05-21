@@ -6,7 +6,7 @@ With `gulp-rev` takes care fo that:
 `npm install --save gulp-rev'`
 
 This is an example for versioning our css:
-```coffee
+```coffeescript
 rev = require 'gulp-rev'
 
 gulp.task 'styles', ->
@@ -23,7 +23,7 @@ We need then to change `app.css` references in other files, like `index.html` so
 `gulp-rev` docs gives some insights to do that in their (integration guide)[https://github.com/sindresorhus/gulp-rev/blob/master/integration.md].
 I personally just replace the references using native `replace` in JavaScript:
 
-```coffee
+```coffeescript
 gulp.task 'styles', ->
   gulp.src parameters.styles_main_file
   .pipe less paths: [ path.join(__dirname) ] # or sass()

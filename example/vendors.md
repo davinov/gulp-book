@@ -3,7 +3,7 @@
 ## Manually added
 To include external libs placed in `vendor/` in a `vendor.js` file:
 
-```coffee
+```coffeescript
 gulp.task 'vendor', ->
     gulp.src parameters.vendor_path+'/**/*.js'
     .pipe concat parameters.vendor_main_file
@@ -14,7 +14,7 @@ gulp.task 'vendor', ->
 ## Using Bower
 To read automatically `bower.json` and put the corresponding files in `bower-vendors.js`:
 `npm install --save gulp-bower-files`
-```coffee
+```coffeescript
 bowerFiles    = require 'gulp-bower-files'
 
 gulp.task 'bower', ->

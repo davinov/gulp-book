@@ -2,7 +2,7 @@
 
 To minify JavaScript files (for production environment):
 `npm install --save gulp-uglify`
-```coffee
+```coffeescript
 uglify  = require 'gulp-uglify'
 
 gulp.task 'minify',
