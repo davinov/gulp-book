@@ -2,7 +2,7 @@
 
 I'm excited everyday I write front-end code with these amazing tools we now have to build client-side apps with pleasure. 
 I liked JavaScript but typing so many brackets was killing my keyboard, then I discovered [CoffeeScript](http://coffeescript.org). 
-I was desperately trying to rationalize my copy and paste activity for selectors in CSS, but that before [LESS](http://lesscss.org) saved my life.
+I was desperately trying to rationalize my copy and paste activity for selectors in CSS, but that was before [LESS](http://lesscss.org) saved my life.
 I got lost every time in the verbose HTML markup of long web pages, and couldn't stand losing time forgetting closing tags, so [Jade](http://jade-lang.com) felt like a spring cleaning to me.
 
 All these languages (and others like LiveScript, SCSS, etc.) are (unfortunately?) not natively read by browsers we develop for, adding to our test and release process an extra building step.
