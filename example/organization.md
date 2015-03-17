@@ -16,7 +16,7 @@ Considering my target organization:
                 ...
             ...
             app.coffee
-            app.(less|saas)
+            app.(less|scss)
             index.jade
         build/
             gulpfile.coffee
