@@ -2,7 +2,7 @@
 
 The `gulpfile` is organized in several _tasks_ that you can execute from command line using `gulp [task-name]`.
 
-A task is defined using the [`gulp.task` function](TODO:lien vers la doc).
+A task is defined using the [`gulp.task` function](https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulptaskname-deps-fn).
 To define a task that prints "Hello World", it's as simple as 
 ```js
 gulp.task('hello', function() {
